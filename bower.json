@@ -1,26 +1,21 @@
 {
-    "name": "modulex-base",
-    "author": "yiminghe <yiminghe@gmail.com>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/kissyteam/base.git"
-    },
-    "ignore": [
-        "**/*",
-        "!build/**/*",
-        "!lib/**/*",
-        "!meta/**/*",
-        "!index.js"
-    ],
-    "devDependencies": {
-        "modulex": "*",
-        "modulex-ua": "1.x",
-        "modulex-feature": "1.x"
-    },
-    "dependencies": {
-        "modulex-util": "1.x",
-        "modulex-attribute": "1.x",
-        "modulex-event-custom": "1.x"
-    }
+  "name": "modulex-base",
+  "author": "yiminghe <yiminghe@gmail.com>",
+  "ignore": [
+    "**/*",
+    "!build/**/*",
+    "!lib/**/*",
+    "!meta/**/*",
+    "!index.js"
+  ],
+  "devDependencies": {
+    "modulex": "*",
+    "ua": "module/ua#1.x",
+    "feature": "module/feature#1.x"
+  },
+  "dependencies": {
+    "util": "module/util#1.x",
+    "attribute": "module/attribute#1.x",
+    "event-custom": "module/event-custom#1.x"
+  }
 }
