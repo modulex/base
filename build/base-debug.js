@@ -1,11 +1,11 @@
 /*
-Copyright 2014, modulex-base@1.0.1
+Copyright 2015, modulex-base@1.0.6
 MIT Licensed
-build time: Thu, 16 Oct 2014 04:41:19 GMT
+build time: Mon, 30 Mar 2015 04:26:34 GMT
 */
-modulex.add("base", ["modulex-util","attribute"], function(require, exports, module) {
+modulex.add("base", ["modulex-util","modulex-attribute"], function(require, exports, module) {
 var modulexUtil = require("modulex-util");
-var attribute = require("attribute");
+var modulexAttribute = require("modulex-attribute");
 /*
 combined modules:
 base
@@ -18,7 +18,7 @@ base = function (exports) {
    * @author yiminghe@gmail.com
    */
   var util = modulexUtil;
-  var Attribute = attribute;
+  var Attribute = modulexAttribute;
   var ucfirst = util.ucfirst, ON_SET = '_onSet', noop = util.noop;
   function __getHook(method, reverse) {
     return function (origFn) {
@@ -208,7 +208,7 @@ base = function (exports) {
     }
   });
   util.mix(Base, {
-    version: '1.0.1',
+    version: '1.0.6',
     __hooks__: {
       initializer: __getHook(),
       destructor: __getHook('__destructor', true)

@@ -1,6 +1,6 @@
 /*
-Copyright 2014, modulex-base@1.0.1
+Copyright 2015, modulex-base@1.0.6
 MIT Licensed
-build time: Thu, 16 Oct 2014 04:41:19 GMT
+build time: Mon, 30 Mar 2015 04:26:34 GMT
 */
-modulex.config("requires",{"base":["modulex-util","attribute"]});
+modulex.config("requires",{"base":["modulex-util","modulex-attribute"]});
